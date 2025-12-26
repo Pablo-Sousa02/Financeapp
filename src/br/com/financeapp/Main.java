@@ -23,7 +23,7 @@ public class Main {
                 System.out.print("Escolha uma opção: ");
                 
                 opcao = scanner.nextInt();
-                scanner.nextLine(); // limpa buffer
+                scanner.nextLine();
                 
                 switch (opcao) {
                     
@@ -48,13 +48,14 @@ public class Main {
     // ===== MÉTODOS AUXILIARES =====
 
     private static void adicionarReceita(Scanner scanner, Carteira carteira) {
-
-        System.out.print("Descrição da receita: ");
-        String descricao = scanner.nextLine();
-
         System.out.print("Valor da receita: ");
         double valor = scanner.nextDouble();
         scanner.nextLine();
+        
+        System.out.print("Descrição da receita: ");
+        String descricao = scanner.nextLine();
+
+        
 
         Categoria categoria = escolherCategoria(scanner);
 
