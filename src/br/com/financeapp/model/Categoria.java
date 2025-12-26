@@ -1,5 +1,10 @@
 package br.com.financeapp.model;
 
-public class Categoria {
-    
+public enum Categoria {
+    ALIMENTACAO,
+    TRANSPORTE,
+    LAZER,
+    MORADIA,
+    SAUDE,
+    OUTROS
 }
